@@ -1,5 +1,5 @@
 require "rails/railtie"
-require "trailblazer/loader"
+#require "trailblazer/loader"
 
 module Trailblazer
   class Railtie < ::Rails::Railtie
@@ -8,9 +8,9 @@ module Trailblazer
 
     def self.load_concepts(app)
       # Loader.new.(insert: [ModelFile, before: Loader::AddConceptFiles]) { |file| require_dependency("#{app.root}/#{file}") }
-      load_for(app)
+      #load_for(app)
 
-      engines.each { |engine| load_for(engine) }
+      #engines.each { |engine| load_for(engine) }
     end
 
     def self.engines
